@@ -186,7 +186,7 @@ header {
 header .top-container {
   height: max-content;
   width: 100%;
-  background-color: #111111aa;
+  background-color: rgb(0, 4, 17, 0.8);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -202,7 +202,7 @@ header .top-container .headerTitle {
 
 .headerTitle a:link,
 .headerTitle a:visited {
-  color: white;
+  color: rgb(225, 239, 230);
 }
 
 header .top-container nav {
@@ -236,12 +236,12 @@ header .top-container nav .social-media a {
 
 header .top-container nav .social-media a:link,
 header .top-container nav .social-media a:visited {
-  color: white;
+  color: rgb(225, 239, 230);
 }
 
 header .top-container nav .links a:link,
 header .top-container nav .links a:visited {
-  color: white;
+  color: rgb(225, 239, 230);
 }
 
 /* spacers */
@@ -262,6 +262,28 @@ header .top-container nav .links a:visited {
   height: 100vh;
   text-align: center;
   background-color: rgb(0, 4, 17);
+  color: rgb(225, 239, 230);
+  padding: 5rem;
+}
+
+.gallery h2 {
+  height: max-content;
+}
+
+.gallery div .image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0rem;
+  justify-content: center;
+  padding: 2rem 14rem;
+}
+.gallery div .image-container img {
+  height: auto;
+  width: 35rem;
+  margin: 0 2rem 4rem;
+  border-radius: 0.5rem;
 }
 
 /* about us section */
@@ -286,10 +308,12 @@ header .top-container nav .links a:visited {
 
 .about h2 {
   width: 100%;
+  color: rgb(225, 239, 230);
 }
 
 .about-container .text {
   width: 50%;
+  color: rgb(225, 239, 230);
 }
 
 /* contact us section */
@@ -306,6 +330,7 @@ header .top-container nav .links a:visited {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 4, 17, 0.8);
+  color: rgb(225, 239, 230);
 }
 
 .contact h2 {
@@ -341,10 +366,20 @@ header .top-container nav .links a:visited {
 
 /* footer section */
 footer {
-  width: 100%;
   height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
   padding-top: 2.5vh;
-  font-size: 3rem;
+  font-size: 2rem;
+  background-color: rgb(0, 4, 17, 0.8);
+}
+
+footer label {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 /* mobile media query */
@@ -396,8 +431,17 @@ footer {
 
   /* footer section */
   footer {
-    height: auto;
+    height: max-content;
+    width: 100%;
     padding-top: 2.5vh;
     font-size: 2rem;
+    background-color: rgb(0, 4, 17, 0.8);
+  }
+
+  footer label {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
   }
 }
