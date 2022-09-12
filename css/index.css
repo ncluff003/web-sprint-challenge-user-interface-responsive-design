@@ -391,10 +391,10 @@ footer label p {
 footer label .footer-container {
   display: flex;
   height: 4rem;
-  width: 90%;
+  width: 100%;
   justify-content: center;
 }
-footer label .footer-container #email {
+footer label .footer-container #emailAddress {
   width: 60%;
   font-size: 2.6rem;
   font-family: Roboto, Rubik;
